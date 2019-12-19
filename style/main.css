@@ -1,0 +1,425 @@
+/**
+ * =============================================================================
+ * This is the file where all your styling should go in.
+ * Instead of modifying the styles found in the monogatari.css file or others,
+ * you should overwrite those styles in this file.
+ *
+ * The CSS selectors shown are not an extensive list but they are the most
+ * common you might want to change. To find what other elements are available,
+ * you can take a look at the monogatari.css file or use your browser's dev
+ * tools to inspect the elements.
+ * =============================================================================
+**/
+
+/**
+ * ===========================
+ * General Styling
+ * ===========================
+**/
+
+/* Grayscaling CSS for Holiday Exchange */
+.grayscale
+{
+  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
+}
+
+@font-face {
+    /*font-family: "FGO";
+    src: url("../fonts/FGO-Main-Font.ttf") format("truetype");*/
+}
+
+/* General Style */
+body {
+
+	background-color: #000000;
+
+}
+
+/* Simple Button styles*/
+button
+{
+	background-image: url("../img/ui/choice-button2.png") !important;
+	background-color: transparent;
+	padding: 0px;
+	border: 3px solid transparent;
+}
+
+
+.version-number
+{
+	color: #ffffff !important;
+	/* -webkit-text-stroke: 1px #ffffff; */
+	position: absolute !important;
+	left: -45%;
+	margin: 0.5%;
+}
+
+.xmas-main-presents
+{
+	position: fixed !important;
+	bottom: -13% !important;
+	left: 27% !important;
+	/* animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%; */
+	animation: shake-shake 4.72s ease infinite;
+	/* overflow: hidden !important; */
+}
+
+@keyframes shake-shake
+{
+	0% { transform:rotate(0deg) }
+	1.78571% { transform:rotate(10deg) }
+	3.57143% { transform:rotate(0deg) }
+	5.35714% { transform:rotate(10deg) }
+	7.14286% { transform:rotate(0deg) }
+	8.92857% { transform:rotate(10deg) }
+	10.71429% { transform:rotate(0deg)}
+	100% { transform:rotate(0deg) }
+}
+
+.xmas-main-gudako
+{
+	position: fixed !important;
+	left: 36%;
+	bottom: 11% !important;
+	animation: rock-rock 5.64s ease-in-out infinite;
+}
+
+.xmas-main-gudao
+{
+	position: fixed !important;
+	left: 28%;
+	bottom: 10% !important;
+	animation: rock-rock2 6.32s ease-in-out infinite;
+}
+
+.xmas-main-fou
+{
+	position: fixed !important;
+	left: 20%;
+	bottom: 23% !important;
+	animation: sleepy-sleep 5.82s ease-in-out infinite;
+}
+
+@keyframes rock-rock
+{
+	0% { transform:rotate(0deg); }
+	50% {transform:rotate(2deg) scale(1,1.01);}
+	100% { transform:rotate(0deg); }
+}
+
+@keyframes rock-rock2
+{
+	0% { transform:rotate(0deg); }
+	25% {transform: scale(1,1.01);}
+	50% {transform:rotate(-1.7deg) scale(1, 1.02); }
+	100% { transform:rotate(0deg); }
+}
+
+.room-events
+{
+	display: none;
+}
+
+@keyframes sleepy-sleep
+{
+	0%   { transform: scale(1,1)      translateY(0); }
+	20.3%  { transform: scale(1,1.02)   translateY(-0.5px); }
+	40.8%  { transform: scale(1,1) translateY(0); }
+	70.0	{ transform: scale(1,1) translateY(0); }
+	75.3%  { transform: scale(1,1.05)  translateY(-1.5px); }
+	100% { transform: scale(1,1)      translateY(0); }
+}
+
+@keyframes bounce-bounce
+{
+  /* 0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-30px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); } */
+	0%   { transform: scale(1,1)      translateY(0); }
+	10.3%  { transform: scale(1.1,.9)   translateY(0); }
+	20.2%  { transform: scale(.9,1.1)   translateY(-30px); }
+	30.8%  { transform: scale(1,1) translateY(0); }
+	40.6%  { transform: scale(1,1)      translateY(-2px); }
+	60.3%  { transform: scale(1,1)      translateY(0); }
+	100% { transform: scale(1,1)      translateY(0); }
+}
+
+
+/* Simple Button Style on Hover */
+button:hover, menuButton:hover
+{
+	opacity: 0.9;
+	border: 3px solid #add8e6;
+}
+
+.button-disabled
+{
+	pointer-events:none;
+}
+
+.flexButton
+{
+	background-image: url("../img/ui/choice-button2.png") !important;
+	background-color: transparent;
+	padding: 0px;
+	border: 3px solid transparent;
+}
+
+.flexButton:hover
+{
+	opacity: 0.9;
+	border: 3px solid #add8e6;
+}
+.flexButton-disabled
+{
+	pointer-events:none;
+}
+
+
+input, select
+{
+	color: #000000;
+}
+
+/* General Styling for Menu Screens */
+[data-menu] {
+
+}
+
+[data-menu="settings"]
+{
+	background-color: #ffffff !important;
+}
+
+[data-menu="load"]
+{
+	background-color: #ffffff !important;
+}
+
+[data-menu="save"]
+{
+	background-color: #ffffff !important;
+}
+
+[data-menu="loading"]
+{
+	background-color: #ffffff !important;
+}
+
+[data-menu="help"]
+{
+	background-color: #ffffff !important;
+}
+
+/**
+ * ===========================
+ * Main Menu Styling
+ * ===========================
+**/
+
+/* Main Menu Styling */
+[data-menu="main"] {
+	background-image: url("../img/scenes/myroom-xmas.png");
+	background-color: #ffffff !important;
+}
+
+/* Main Menu Buttons Styling */
+[data-menu="main"] button {
+	border: 3px solid #ffffff !important;
+}
+
+[data-menu="main"] button:hover {
+	border: 3px solid #add8e6 !important;
+}
+
+/**
+ * ===========================
+ * Save and Load Menus Styling
+ * ===========================
+**/
+
+/* Slots Style */
+[data-ui="slots"] figure {
+
+}
+
+/* Slot's Image Style */
+[data-ui="slots"] img {
+
+}
+
+/* Slots Title Style */
+[data-ui="slots"] figcaption {
+
+}
+
+/* Slots Delete Button Style */
+[data-ui="slots"] button {
+
+}
+
+/**
+ * ===========================
+ * Game Elements Styling
+ * ===========================
+**/
+
+/* Choice Buttons style */
+[data-ui="choices"] button
+{
+	width: 700px !important;
+}
+
+/* Choice Button Style on Hover */
+[data-ui="choices"] button:hover
+{
+	width: 700px !important;
+}
+
+[data-ui="choices"] .button-disabled
+{
+	color: #606060 !important;
+}
+
+[data-ui="choices"] .flexButton-disabled
+{
+	width: 700px !important;
+	color: #606060 !important;
+}
+
+[data-ui="choices"] .flexButton
+{
+	width: 700px !important;
+}
+
+[data-ui="choices"] .flexButton:hover
+{
+	width: 700px !important;
+}
+
+/* Text Box styling */
+[data-ui="text"] {
+	/*
+	background-image: url("../img/ui/textbox.png");
+	*/
+}
+
+[data-ui="input"]
+{
+	background-image: url("../img/ui/confirmation-window.png");
+	height: 447px !important;
+	width: 746px !important;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+[data-ui="input"] button
+{
+	background-image: url("../img/ui/confirm-button.png") !important;
+	height: 57px !important;
+	width: 129px !important;
+	color: #29316B !important;
+	border: none !important;
+}
+
+[data-ui="input"] button:hover
+{
+	height: 57px !important;
+	width: 129px !important;
+	border: none !important;
+	background-color: transparent !important;
+	opacity: 1.0 !important;
+	color: #08A5DF !important;
+}
+
+[data-ui="input-message"]
+{
+
+}
+
+/* Character Name Style */
+[data-ui="who"] {
+
+}
+
+[data-ui="say"]
+{
+	padding-left: 2% !important;
+}
+
+/* Style for Centered Text */
+[data-ui="centered"] {
+
+}
+
+
+/* Character Images Styles */
+#game [data-character] {
+	/* max-width: 100% !important; */
+  max-height: 100% !important;
+  /* width: 100% !important; */
+  /* transform: scale(1.5); */
+  /* max-height: 100% !important; */
+  /* min-width: 700px !important; */
+  /* object-fit: fill !important; */
+  max-width: 100% !important;
+}
+
+/* Other Images Styles */
+#game [data-image] {
+
+}
+
+/**
+ * ===========================
+ * Quick Menu Styling
+ * ===========================
+**/
+
+/* These styles are applied to the Mobile version of the Quick Menu */
+
+/* Quick Menu Style */
+[data-ui="quick-menu"] {
+
+}
+
+/* Quick Menu Buttons Style */
+[data-ui="quick-menu"] span {
+
+}
+
+/* Quick Menu Buttons Style on Hover */
+[data-ui="quick-menu"] span:hover {
+
+}
+
+/* Quick Menu Buttons Icon Style */
+[data-ui="quick-menu"] > span > .fa {
+
+}
+
+/* Styles for the desktop version of the Quick Menu*/
+@media screen and (min-width: 37.56255em)
+{
+
+	/* Quick Menu Style */
+	[data-ui="quick-menu"] {
+
+	}
+
+	/* Quick Menu Buttons Style */
+	[data-ui="quick-menu"] span {
+
+	}
+
+	/* Quick Menu Buttons Style on Hover */
+	[data-ui="quick-menu"] span:hover {
+
+	}
+}
