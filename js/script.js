@@ -600,7 +600,7 @@ const characters = {
 			"Tired": "Tired.png",
 	  },
 	},
-	"Pingu-Swag":
+	"Pingu":
 	{
 		"Name": "Meltryllis",
 		"Color": "#ffffff",
@@ -624,11 +624,11 @@ const characters = {
 			"Sparkle": "Sparkle.png",
 		},
 	},
-	"Pingu":
+	"Pingu-Swag":
 	{
 		"Name": "Meltryllis",
 		"Color": "#ffffff",
-		"Directory": "Pingu2",
+		"Directory": "Pingu Swag",
 		"Images": 
 		{
 			"Angry": "Angry.png",
