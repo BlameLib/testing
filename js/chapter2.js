@@ -51,4 +51,4 @@ script ["Chapter-2-End"]=
   "This is the end of Chapter 2.", "stop music", "play music Finish",
   "display message Credits",
   "end",
-],
+];
