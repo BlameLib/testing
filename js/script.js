@@ -179,7 +179,6 @@ const music = {
 	"Ooku_BGM2": "Tokugawa Kaiten Labyrinth Map2.ogg",
 	"Beast_III": "Advent Beast III-L.mp3",
 	"Demise": "Demise.ogg",
-	
 	"SpinalCoaster": "Spinal Coaster.mp3",
 };
 
@@ -266,7 +265,6 @@ const scenes = {
 	"Stratosphere-Day": "stratosphere-day.png",
 	"Stratosphere-Dusk": "stratosphere-dusk.png",
 	"Stratosphere-Night": "stratosphere-night.png",
-	
 	"ResortHallway": "resort-hallway.png",
 };
 
@@ -677,7 +675,6 @@ const characters = {
 		  "Serious": "Serious.png",
 		  "Stunned": "Stunned.png",
 		  "Surprised": "Surprised.png",
-		  
 	  },
 	},
 
