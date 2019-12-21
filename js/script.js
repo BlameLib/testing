@@ -437,6 +437,8 @@ const characters = {
 		"Images":
 		{
 			"Upset": "jack upset.png",
+			"Serious": "jack serious.png",
+			"Pissed": "jack pissed.png",
 		},
 	},
 
@@ -447,6 +449,7 @@ const characters = {
 		"Images":
 		{
 			"Upset": "nursery upset.png",
+			"Angry": "nursery angry.png",
 		},
 	},
 
@@ -458,6 +461,8 @@ const characters = {
 		{
 			"Upset": "janta upset.png",
 			"Upset2": "janta crying.png",
+			"Agitated": "janta agitated.png",
+			"Irritated": "janta irritated.png",
 		},
 	},
 
@@ -647,6 +652,33 @@ const characters = {
 			"Smug": "Smug.png",
 			"Sparkle": "Sparkle.png",
 		},
+	},
+	"Gareth":
+	{
+	  "Name": "Gareth",
+		"Color": "#ffffff",
+	  "Directory": "Gareth",
+	  "Images":
+	  {
+		  "Amazed": "Amazed.png",
+		  "Annoyed": "Annoyed.png",
+		  "Embarassed": "Embarassed.png",
+		  "Grumpy": "Grumpy.png",
+		  "Happy": "Happy.png",
+		  "Intense": "Intense.png",
+		  "Meme": "Meme.png",
+		  "Meme2": "Meme2.png",
+		  "Nervous": "Nervous.png",
+		  "Neutral": "Neutral.png",
+		  "Pissed": "Pissed.png",
+		  "Sad": "Sad.png",
+		  "Sad2": "Sad2.png",
+		  "Sad3": "Sad3.png",
+		  "Serious": "Serious.png",
+		  "Stunned": "Stunned.png",
+		  "Surprised": "Surprised.png",
+		  
+	  },
 	},
 
 };
