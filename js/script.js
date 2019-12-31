@@ -266,6 +266,8 @@ const scenes = {
 	"Stratosphere-Dusk": "stratosphere-dusk.png",
 	"Stratosphere-Night": "stratosphere-night.png",
 	"ResortHallway": "resort-hallway.png",
+	"Bazaar": "night-market.jpg",
+	
 };
 
 // Define the Characters
