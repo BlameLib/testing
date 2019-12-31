@@ -170,7 +170,7 @@ script["Chapter-2-4"] =
 	"Da Vinci Considering the scale of the action",
 	"Da Vinci I have no choice but to declare that Servant as an Enemy of Chaldea",
 	
-	"jump Chapter-2-5",
+	"jump Chapter-2-End",
 ],
 
 script ["Chapter-2-End"]=
